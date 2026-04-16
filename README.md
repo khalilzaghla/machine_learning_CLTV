@@ -283,3 +283,49 @@ Contributions welcome! Please:
 ## Contact
 
 For questions or issues, please open a GitHub issue or contact [your email].
+
+---
+
+## 📚 References
+
+This project draws from the following key academic works in Customer Lifetime Value (CLTV) prediction and related fields:
+
+### Core CLTV Prediction Papers
+
+| # | Paper | Authors | Venue | Year | Link |
+|---|---|---|---|---|---|
+| [1] | **OptDist: Learning Optimal Distribution for Customer Lifetime Value Prediction** | Yunpeng Weng et al. | CIKM | 2024 | [arXiv:2408.08585](https://arxiv.org/abs/2408.08585) |
+| [2] | **A Deep Probabilistic Model for Customer Lifetime Value Prediction (ZILN)** | Xiaojing Wang, Tianqi Liu, Jingang Miao | arXiv | 2019 | [arXiv:1912.07753](https://arxiv.org/abs/1912.07753) |
+| [3] | **Billion-user Customer Lifetime Value Prediction: An Industrial-scale Solution from Kuaishou (MDME)** | Kunpeng Li et al. | CIKM | 2022 | [ACM DL](https://dl.acm.org/doi/10.1145/3511808.3557152) |
+| [4] | **MDAN: Multi-distribution Adaptive Networks for LTV Prediction** | Wenshuang Liu et al. | PAKDD | 2024 | [Springer](https://link.springer.com/chapter/10.1007/978-981-97-2266-2_32) |
+| [5] | **Feature Missing-aware Routing-and-Fusion Network for CLTV Prediction (MarfNet)** | Xuejiao Yang et al. | WSDM | 2023 | [ACM DL](https://dl.acm.org/doi/10.1145/3539597.3570402) |
+| [6] | **Out of the Box Thinking: Improving CLTV Modelling via Expert Routing and Game Whale Detection (ExpLTV)** | Shijie Zhang et al. | CIKM | 2023 | [ACM DL](https://dl.acm.org/doi/10.1145/3583780.3615205) |
+| [7] | **perCLTV: A General System for Personalized Customer Lifetime Value Prediction in Online Games** | Shiwei Zhao et al. | ACM TOIS | 2023 | [ACM DL](https://dl.acm.org/doi/10.1145/3548456) |
+
+### Classical & Statistical CLTV Methods
+
+| # | Paper | Authors | Venue | Year |
+|---|---|---|---|---|
+| [8] | **RFM and CLV: Using Iso-value Curves for Customer Base Analysis** | Fader, Hardie, Lee | J. Marketing Research | 2005 |
+| [9] | **Counting Your Customers: The Easy Way — Pareto/NBD Model** | Fader, Hardie, Lee | Marketing Science | 2005 |
+| [10] | **Customer Lifetime Value Prediction Using Embeddings** | Chamberlain et al. | KDD | 2017 |
+| [11] | **Improved Customer Lifetime Value Prediction with Sequence-to-Sequence Learning** | Bauer & Jannach | ACM TKDD | 2021 |
+
+### Foundational Deep Learning Components Used in This Project
+
+| # | Component | Paper | Authors | Year |
+|---|---|---|---|---|
+| [12] | **Mixture of Experts** | Outrageously Large Neural Networks: The Sparsely-Gated MoE Layer | Shazeer et al. | 2017 |
+| [13] | **Gumbel-Softmax** | Categorical Reparameterization with Gumbel-Softmax | Jang, Gu, Poole | ICLR 2017 |
+| [14] | **Focal Loss** | Focal Loss for Dense Object Detection | Lin et al. | ICCV 2017 |
+| [15] | **Adam Optimizer** | Adam: A Method for Stochastic Optimization | Kingma & Ba | ICLR 2015 |
+
+### Dataset
+
+| # | Dataset | Source | Description |
+|---|---|---|---|
+| [16] | **Online Retail II** | [UCI ML Repository](https://archive.ics.uci.edu/dataset/502/online+retail+ii) | Transactional data from a UK-based online retailer (2009–2011), ~1M rows |
+
+---
+
+> **Note:** This project is inspired by the methodology of **OptDist** [1] and **ZILN** [2], adapting the distribution-aware and zero-inflation modeling paradigms into a GPU-accelerated PyTorch pipeline using the publicly available Online Retail II dataset.
